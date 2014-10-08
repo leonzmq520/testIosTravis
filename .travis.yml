@@ -1,4 +1,4 @@
-#language: objective-c
+language: objective-c
 
 #before_install:
 #- rvm --default use 2.0.0
