@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="40J-PL-FIu">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller - MainMenu-->
+        <scene sceneID="Bfo-cy-bma">
+            <objects>
+                <navigationController title="MainMenu" definesPresentationContext="YES" id="UFq-oa-GcY" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Lel-mX-JNj"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="32h-W4-ylb">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="x9X-FB-Lsi" kind="relationship" relationship="rootViewController" id="uz7-cI-RYk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s9C-gf-9lY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3291" y="246"/>
+        </scene>
+        <!--Navigation Controller - Messagerie-->
+        <scene sceneID="zAe-Xc-IXT">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="GbL-zy-PtI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Messagerie" image="1387395532_bubble.png" id="T17-5U-AKO"/>
+                    <navigationItem key="navigationItem" id="QTr-rV-Enk"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bUf-gp-ofV">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AGr-AR-eJ5" kind="relationship" relationship="rootViewController" id="z7N-OO-67e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iQc-Ry-jGA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-637" y="28"/>
+        </scene>
+        <!--Conversation Controller - conversation-->
+        <scene sceneID="KU2-QL-M8U">
+            <objects>
+                <tableViewController title="conversation" id="AGr-AR-eJ5" customClass="conversationController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Cd5-Bh-Tny">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="40" id="AFw-4u-421">
+                                <rect key="frame" x="0.0" y="86" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AFw-4u-421" id="rs6-zS-mCB">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="AGr-AR-eJ5" id="jO0-5C-DkP"/>
+                            <outlet property="delegate" destination="AGr-AR-eJ5" id="X5g-xp-zH4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Zrg-tY-esD"/>
+                    <connections>
+                        <segue destination="hYc-yo-ut7" kind="modal" identifier="message" modalTransitionStyle="crossDissolve" id="doM-F1-X57"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AE9-Bw-0It" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-97" y="28"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hxb-kf-gHm">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="hYc-yo-ut7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="77e-A8-B8L"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="l9x-Iv-RSn">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2Nr-mo-aBW" kind="relationship" relationship="rootViewController" id="Myp-V0-zc2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l4u-dn-B4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="500" y="563"/>
+        </scene>
+        <!--Main View Controller - Messagerie-->
+        <scene sceneID="ZHO-mK-vhn">
+            <objects>
+                <viewController title="Messagerie" id="2Nr-mo-aBW" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gvv-Eu-hDL"/>
+                        <viewControllerLayoutGuide type="bottom" id="yk3-1W-GXP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="deF-Ta-s0f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="bottom" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Yfn-hT-pQR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="433"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="22" minY="0.0" maxX="6" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="bottom" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="dcM-ks-hbG">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dcM-ks-hbG" id="6iI-ki-IEf">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2Nr-mo-aBW" id="YlW-fm-hfV"/>
+                                    <outlet property="delegate" destination="2Nr-mo-aBW" id="IJu-jI-3lc"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vG4-R4-IqH">
+                                <rect key="frame" x="251" y="441" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="15"/>
+                                <state key="normal" title="Envoyer">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="send:" destination="2Nr-mo-aBW" eventType="touchUpInside" id="Hyp-8e-1gq"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Saisissez votre message" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IP5-GY-uxo">
+                                <rect key="frame" x="10" y="441" width="221" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="letDownKeyboard:" destination="2Nr-mo-aBW" eventType="editingDidEndOnExit" id="7RW-bq-nK4"/>
+                                    <outlet property="delegate" destination="2Nr-mo-aBW" id="KdH-9v-ANw"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.37574303669999998" green="0.0015675577450000001" blue="0.017093803649999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="5he-IC-WBN">
+                        <barButtonItem key="leftBarButtonItem" title="Retour" id="rFp-Vf-095">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="UFq-oa-GcY" kind="modal" id="YQI-O5-FC6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="messageInput" destination="IP5-GY-uxo" id="hWc-Or-9oA"/>
+                        <outlet property="messages" destination="Yfn-hT-pQR" id="5zo-2I-shA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NWe-fD-zIK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962" y="563"/>
+        </scene>
+        <!--Map View Controller - map-->
+        <scene sceneID="HBa-WY-Gse">
+            <objects>
+                <viewController title="map" id="bjs-qL-jtW" customClass="MapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v6B-I2-X06"/>
+                        <viewControllerLayoutGuide type="bottom" id="qsv-2C-I7E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Ct-90-pBG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3Qj-aP-9ac">
+                                <rect key="frame" x="0.0" y="65" width="320" height="364"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8m-Wi-Vw7">
+                                <rect key="frame" x="92" y="74" width="150" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="15"/>
+                                <state key="normal" title="Ma position actuelle">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getCurrentLocation:" destination="bjs-qL-jtW" eventType="touchUpInside" id="3j1-8c-Ofp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="203" translatesAutoresizingMaskIntoConstraints="NO" id="Dwm-MB-iO5">
+                                <rect key="frame" x="59" y="65" width="203" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="9"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch hidden="YES" opaque="NO" tag="101" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oTr-PU-dS2">
+                                <rect key="frame" x="-1" y="268" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="busSwitchButtonValueChanged:" destination="bjs-qL-jtW" eventType="valueChanged" id="rp4-Qk-jjg"/>
+                                </connections>
+                            </switch>
+                            <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eL0-j5-CiI">
+                                <rect key="frame" x="266" y="268" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="samSwitchButtonValueChanged:" destination="bjs-qL-jtW" eventType="valueChanged" id="Wig-ma-EOG"/>
+                                </connections>
+                            </switch>
+                            <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Jvl-uY-S1l">
+                                <rect key="frame" x="-1" y="326" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="taxiSwitchButtonValueChanged:" destination="bjs-qL-jtW" eventType="valueChanged" id="8IK-Nc-BjO"/>
+                                </connections>
+                            </switch>
+                            <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0EH-f4-jWA">
+                                <rect key="frame" x="266" y="326" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="metroSwitchButtonValueChanged:" destination="bjs-qL-jtW" eventType="valueChanged" id="dAn-Of-fms"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBb-cq-Qm4">
+                                <rect key="frame" x="266" y="319" width="49" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="annotationMetro.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="metroTagButton:" destination="bjs-qL-jtW" eventType="touchUpInside" id="r8d-2w-QmB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUl-Tc-CCI">
+                                <rect key="frame" x="5" y="318" width="47" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="annotationTaxi.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="taxiTagButton:" destination="bjs-qL-jtW" eventType="touchUpInside" id="GUJ-kO-pbe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4q-fd-SLa">
+                                <rect key="frame" x="266" y="258" width="49" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="annotationSam.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="samTagButton:" destination="bjs-qL-jtW" eventType="touchUpInside" id="JOY-2b-wVH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfc-iE-nFw">
+                                <rect key="frame" x="3" y="258" width="51" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="annotationBus.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="busTagButton:" destination="bjs-qL-jtW" eventType="touchUpInside" id="8sH-u8-G6Z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" none="YES" image="YES"/>
+                        </accessibility>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Carte" image="1387395549_location.png" id="eBy-yW-iY5"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="ZSU-ZJ-Vcq"/>
+                    <connections>
+                        <outlet property="busSwitchButton" destination="oTr-PU-dS2" id="WV3-pd-bdq"/>
+                        <outlet property="busViewButton" destination="vfc-iE-nFw" id="kG5-vv-bfz"/>
+                        <outlet property="getAddressLabel" destination="Dwm-MB-iO5" id="LYg-is-T3q"/>
+                        <outlet property="mapView" destination="3Qj-aP-9ac" id="qNd-oG-z2h"/>
+                        <outlet property="metroSwitchButton" destination="0EH-f4-jWA" id="jFk-1q-TfX"/>
+                        <outlet property="metroViewButton" destination="hBb-cq-Qm4" id="Sjv-9w-okt"/>
+                        <outlet property="myCurrentLocation" destination="Q8m-Wi-Vw7" id="iLo-Hq-qha"/>
+                        <outlet property="samSwitchButton" destination="eL0-j5-CiI" id="FPu-0u-KHQ"/>
+                        <outlet property="samViewButton" destination="u4q-fd-SLa" id="bWd-sB-mbe"/>
+                        <outlet property="taxiSwitchButton" destination="Jvl-uY-S1l" id="kzX-wx-CdV"/>
+                        <outlet property="taxiViewButton" destination="PUl-Tc-CCI" id="pfg-5S-otO"/>
+                        <segue destination="hYc-yo-ut7" kind="modal" identifier="chatWithSam" modalTransitionStyle="crossDissolve" id="y3n-g6-gBm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bcz-eG-75M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-429" y="986"/>
+        </scene>
+        <!--Profile View Controller - Profile-->
+        <scene sceneID="fTk-A1-Hfc">
+            <objects>
+                <viewController id="oQw-Vp-7Fk" customClass="ProfileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Vy-wT-CEd"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y5X-Zl-4ZC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lvy-t9-NQW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pseudo" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xDf-1x-ovz">
+                                <rect key="frame" x="146" y="155" width="134" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="letDownKeyboard:" destination="rWe-6s-f5O" eventType="editingDidEndOnExit" id="Afl-2I-oXO"/>
+                                    <action selector="letDownKeyboard:" destination="oQw-Vp-7Fk" eventType="editingDidEnd" id="ZlF-Zk-LGW"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ville" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qwQ-Qb-dHv">
+                                <rect key="frame" x="146" y="343" width="134" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="letDownKeyboard:" destination="rWe-6s-f5O" eventType="editingDidEndOnExit" id="FCy-B5-4kl"/>
+                                    <action selector="letDownKeyboard:" destination="oQw-Vp-7Fk" eventType="editingDidEnd" id="Xbt-Gg-sVb"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Poids" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YEn-N0-pRg">
+                                <rect key="frame" x="146" y="305" width="134" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="letDownKeyboard:" destination="rWe-6s-f5O" eventType="editingDidEndOnExit" id="WMX-Us-jUn"/>
+                                    <action selector="letDownKeyboard:" destination="oQw-Vp-7Fk" eventType="editingDidEnd" id="tbW-AO-ZoY"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CwD-MJ-2zx">
+                                <rect key="frame" x="146" y="267" width="134" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="letDownKeyboard:" destination="rWe-6s-f5O" eventType="editingDidEndOnExit" id="3m5-CA-Obu"/>
+                                    <action selector="letDownKeyboard:" destination="oQw-Vp-7Fk" eventType="editingDidEnd" id="6eN-1e-pmc"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mot de passe" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dBG-JT-Igj">
+                                <rect key="frame" x="146" y="193" width="134" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="letDownKeyboard:" destination="rWe-6s-f5O" eventType="editingDidEndOnExit" id="9Kj-eb-CLP"/>
+                                    <action selector="letDownKeyboard:" destination="oQw-Vp-7Fk" eventType="editingDidEnd" id="aka-5m-ODJ"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWH-ag-eq4">
+                                <rect key="frame" x="48" y="97" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="15"/>
+                                <state key="normal" title="Modifier">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="edit:" destination="oQw-Vp-7Fk" eventType="touchUpInside" id="MGJ-As-GBD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5A-Vn-omB">
+                                <rect key="frame" x="198" y="97" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="15"/>
+                                <state key="normal" title="Sauvegarder">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="save:" destination="oQw-Vp-7Fk" eventType="touchUpInside" id="FBY-lD-cWO"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wlD-XJ-hrw">
+                                <rect key="frame" x="146" y="231" width="134" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Homme"/>
+                                    <segment title="Femme"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </segmentedControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pseudo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbj-g4-WFi">
+                                <rect key="frame" x="27" y="158" width="59" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mot de passe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOv-R5-bQj">
+                                <rect key="frame" x="27" y="196" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sexe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gt7-YD-LPe">
+                                <rect key="frame" x="27" y="232" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Age" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLm-2y-tRM">
+                                <rect key="frame" x="27" y="271" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Poids" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMg-X0-rgE">
+                                <rect key="frame" x="27" y="308" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ville" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOA-hi-fDS">
+                                <rect key="frame" x="27" y="347" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.37574303669999998" green="0.0015675577450000001" blue="0.017093803649999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="1387395517_user.png" id="pQo-gA-39v"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="age" destination="CwD-MJ-2zx" id="Lw2-T3-om0"/>
+                        <outlet property="city" destination="qwQ-Qb-dHv" id="YAp-t3-sTM"/>
+                        <outlet property="editButton" destination="cWH-ag-eq4" id="8ez-ED-wC5"/>
+                        <outlet property="password" destination="dBG-JT-Igj" id="qKx-K3-atG"/>
+                        <outlet property="saveButton" destination="P5A-Vn-omB" id="bA6-SD-oxw"/>
+                        <outlet property="sex" destination="wlD-XJ-hrw" id="1yp-CZ-qVM"/>
+                        <outlet property="userName" destination="xDf-1x-ovz" id="8SS-6J-xgh"/>
+                        <outlet property="weight" destination="YEn-N0-pRg" id="4IY-wq-QOn"/>
+                        <segue destination="UFq-oa-GcY" kind="modal" identifier="updateProfile" id="COW-e1-slW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rWe-6s-f5O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1820" y="2015"/>
+        </scene>
+        <!--Main Menu View Controller - MainMenu-->
+        <scene sceneID="sY8-zX-3vf">
+            <objects>
+                <tabBarController title="MainMenu" definesPresentationContext="YES" hidesBottomBarWhenPushed="YES" id="x9X-FB-Lsi" customClass="MainMenuViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ba9-Jo-pcP">
+                        <barButtonItem key="leftBarButtonItem" title="Relancer un test" id="eaR-Nb-wYP">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="WGO-Ye-t87" kind="modal" id="F6e-uf-T88"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Déconnexion" id="EG9-Ze-qwl">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="signOut:" destination="x9X-FB-Lsi" id="dk1-JY-vxN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="eIs-D7-z7I">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="tintColor" red="0.37574303669999998" green="0.0015675577450000001" blue="0.017093803649999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="OfW-eu-WxF" kind="relationship" relationship="viewControllers" id="vVF-W9-f76"/>
+                        <segue destination="bjs-qL-jtW" kind="relationship" relationship="viewControllers" id="2g7-rl-v4x"/>
+                        <segue destination="GbL-zy-PtI" kind="relationship" relationship="viewControllers" id="zS6-Qz-aQA"/>
+                        <segue destination="oQw-Vp-7Fk" kind="relationship" relationship="viewControllers" id="prp-CM-ARY"/>
+                        <segue destination="40J-PL-FIu" kind="modal" identifier="Deconnexion2" id="YjK-If-4h5"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NFo-wZ-eX0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2438" y="246"/>
+        </scene>
+        <!--Navigation Controller - Résultat-->
+        <scene sceneID="e71-Is-eiw">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="OfW-eu-WxF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Résultat" image="1387395565_news.png" id="wQb-Dc-CXb"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mac-C5-e09">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZXc-nw-xXb" kind="relationship" relationship="rootViewController" id="3n4-Re-UUJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mzw-bT-rrz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1902" y="-2178"/>
+        </scene>
+        <!--Main View Controller - displayResult-->
+        <scene sceneID="WHr-QZ-F9I">
+            <objects>
+                <viewController title="displayResult" wantsFullScreenLayout="YES" id="ZXc-nw-xXb" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rao-o6-lfO"/>
+                        <viewControllerLayoutGuide type="bottom" id="MMe-Dl-fYW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gvy-5j-HiW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pj5-rr-LKc">
+                                <rect key="frame" x="127" y="313" width="67" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="15"/>
+                                <state key="normal" title="Courbe">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Hzs-3a-Swc" kind="modal" modalTransitionStyle="crossDissolve" id="l3C-Kh-rNU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Votre alcoolémie est de :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUS-Oi-nIt">
+                                <rect key="frame" x="58" y="146" width="217" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LcP-cQ-4Jq">
+                                <rect key="frame" x="55" y="175" width="223" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.62352941179999999" green="0.015686274510000001" blue="0.18823529410000001" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Result" id="tiV-wt-xFb"/>
+                    <navigationItem key="navigationItem" id="afx-uR-lTu"/>
+                    <connections>
+                        <outlet property="graphButton" destination="pj5-rr-LKc" id="Ock-GE-8hb"/>
+                        <outlet property="result" destination="LcP-cQ-4Jq" id="obE-nj-ETw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PBj-FB-KMr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1236" y="-2178"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9e2-P2-ozT">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="Hzs-3a-Swc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lyg-ad-xkn"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zgH-gA-tlg">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rxD-lM-bS4" kind="relationship" relationship="rootViewController" id="aV9-DQ-bGJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rMx-KE-Z5k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-637" y="-2178"/>
+        </scene>
+        <!--CorePlotContoller-->
+        <scene sceneID="EVH-pY-AUE">
+            <objects>
+                <viewController id="rxD-lM-bS4" userLabel="CorePlotContoller" customClass="KSViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A8F-g9-nwk"/>
+                        <viewControllerLayoutGuide type="bottom" id="JbW-Yx-PxN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zA9-FL-zt5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4sZ-ni-rdH" customClass="CPTGraphHostingView">
+                                <rect key="frame" x="0.0" y="30" width="320" height="442"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mz5-i0-boP">
+                        <barButtonItem key="leftBarButtonItem" title="Résultat" id="QgX-6A-Zwc">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="UFq-oa-GcY" kind="modal" id="Ev1-pZ-GRD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mUa-1H-2N8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-103" y="-2178"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Uj-rs-VQ1">
+            <objects>
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="40J-PL-FIu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mo6-nS-lKQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="orZ-dd-tOX" kind="relationship" relationship="rootViewController" id="eOh-pf-UX3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K0p-L0-Ddo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5935" y="246"/>
+        </scene>
+        <!--Main View Controller - Accueil-->
+        <scene sceneID="Wrc-Mm-kyG">
+            <objects>
+                <viewController title="Accueil" id="orZ-dd-tOX" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TrQ-G4-Zia"/>
+                        <viewControllerLayoutGuide type="bottom" id="KHc-kz-nuQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uzC-1s-BjR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pseudo" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Jc2-Dc-0xr">
+                                <rect key="frame" x="94" y="144" width="132" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="letDownKeyboard:" destination="KhV-jy-npR" eventType="editingDidEndOnExit" id="abb-Dc-p8Z"/>
+                                    <action selector="letDownKeyboard:" destination="orZ-dd-tOX" eventType="editingDidEnd" id="pwe-y5-jOz"/>
+                                    <outlet property="delegate" destination="orZ-dd-tOX" id="CTN-Cn-gft"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mot de passe" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="36j-jf-IL7">
+                                <rect key="frame" x="94" y="203" width="132" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="letDownKeyboard:" destination="KhV-jy-npR" eventType="editingDidEndOnExit" id="5tq-iQ-UQz"/>
+                                    <action selector="letDownKeyboard:" destination="orZ-dd-tOX" eventType="editingDidEnd" id="MSD-UB-Au7"/>
+                                    <outlet property="delegate" destination="orZ-dd-tOX" id="UgU-rZ-F7k"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e74-sR-Ggf">
+                                <rect key="frame" x="112" y="293" width="97" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.34901960784313724" green="0.38039215686274508" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="18"/>
+                                <state key="normal" title="Connexion">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="signIn:" destination="orZ-dd-tOX" eventType="touchUpInside" id="YkK-ux-Qrz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6U-JB-ALl">
+                                <rect key="frame" x="29" y="251" width="263" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVf-15-xnp">
+                                <rect key="frame" x="20" y="423" width="81" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="15"/>
+                                <state key="normal" title="S'inscrire">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="w9U-3e-iQd" kind="modal" id="aGN-2p-lvO"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="QuB-Nn-tHA">
+                                <rect key="frame" x="150" y="259" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.92941182850000004" green="0.92941182850000004" blue="0.92941182850000004" alpha="1" colorSpace="deviceRGB"/>
+                            </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="VfI-p6-E2h">
+                                <rect key="frame" x="65" y="48" width="190" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAi-lY-PSA">
+                                <rect key="frame" x="150" y="426" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="15"/>
+                                <state key="normal" title="Mot de passe oublié">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="forgotPassword:" destination="orZ-dd-tOX" eventType="touchUpInside" id="pea-wX-UYS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.035294117647058823" green="0.047058823529411764" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="po5-sn-jkF"/>
+                    <connections>
+                        <outlet property="indicator" destination="QuB-Nn-tHA" id="9fv-vF-lGD"/>
+                        <outlet property="login" destination="Jc2-Dc-0xr" id="28Q-mD-7uU"/>
+                        <outlet property="message" destination="l6U-JB-ALl" id="MA2-TX-nRd"/>
+                        <outlet property="password" destination="36j-jf-IL7" id="hcA-xT-iQ8"/>
+                        <outlet property="signInButton" destination="e74-sR-Ggf" id="JmC-Jv-tq3"/>
+                        <segue destination="WGO-Ye-t87" kind="modal" identifier="connection" id="TC6-zm-4ke"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KhV-jy-npR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5475" y="246"/>
+        </scene>
+        <!--Navigation Controller - Start-->
+        <scene sceneID="ME7-TK-Kef">
+            <objects>
+                <navigationController title="Start" definesPresentationContext="YES" id="WGO-Ye-t87" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tGb-Lu-xFF">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="eNy-Y8-M2y">
+                        <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="Fay-wZ-qjZ" kind="relationship" relationship="rootViewController" id="rra-Cg-YnT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CVd-pf-nVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4912" y="246"/>
+        </scene>
+        <!--Navigation Controller - SignUp-->
+        <scene sceneID="5Q4-dt-6oV">
+            <objects>
+                <navigationController title="SignUp" definesPresentationContext="YES" id="w9U-3e-iQd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="WQW-ZC-otF"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rPg-a2-K9O">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="0Ul-Um-yWU">
+                        <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="W2F-ld-J7P" kind="relationship" relationship="rootViewController" id="nKC-fH-YlU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z4b-Bg-bOr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5444" y="-787"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="PM0-dl-pIi">
+            <objects>
+                <viewController id="W2F-ld-J7P" customClass="SignUpViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B7A-QB-chX"/>
+                        <viewControllerLayoutGuide type="bottom" id="kJQ-IP-DWb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oZR-1n-ghm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pseudo *" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="mWc-ra-jLn">
+                                <rect key="frame" x="100" y="157" width="135" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="letDownKeyboard:" destination="F4J-xc-pZI" eventType="editingDidEndOnExit" id="9kM-Ev-OYT"/>
+                                    <action selector="letDownKeyboard:" destination="W2F-ld-J7P" eventType="editingDidEnd" id="a3b-xq-YWk"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ville" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iTf-TN-IjQ">
+                                <rect key="frame" x="100" y="368" width="135" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="letDownKeyboard:" destination="W2F-ld-J7P" eventType="editingDidEnd" id="M3e-Ax-KuJ"/>
+                                    <action selector="letDownKeyboard:" destination="F4J-xc-pZI" eventType="editingDidEndOnExit" id="fgQ-rN-8tG"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Poids *" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SLg-JP-IUo">
+                                <rect key="frame" x="100" y="328" width="135" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="letDownKeyboard:" destination="F4J-xc-pZI" eventType="editingDidEndOnExit" id="EQY-2e-zlK"/>
+                                    <action selector="letDownKeyboard:" destination="W2F-ld-J7P" eventType="editingDidEnd" id="z7v-Tb-5Kn"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GyV-zL-p90">
+                                <rect key="frame" x="100" y="283" width="135" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="letDownKeyboard:" destination="F4J-xc-pZI" eventType="editingDidEndOnExit" id="Oq4-bO-2SA"/>
+                                    <action selector="letDownKeyboard:" destination="W2F-ld-J7P" eventType="editingDidEnd" id="tCc-Rb-PlN"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mot de passe *" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="s8j-hU-76t">
+                                <rect key="frame" x="100" y="200" width="135" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="letDownKeyboard:" destination="F4J-xc-pZI" eventType="editingDidEndOnExit" id="PM8-e7-bV4"/>
+                                    <action selector="letDownKeyboard:" destination="W2F-ld-J7P" eventType="editingDidEnd" id="kGj-kX-ZQN"/>
+                                </connections>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="L6J-r8-cac">
+                                <rect key="frame" x="100" y="240" width="135" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Homme"/>
+                                    <segment title="Femme"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="MgK-5H-X3b">
+                                <rect key="frame" x="66" y="93" width="202" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="284" translatesAutoresizingMaskIntoConstraints="NO" id="hm4-tl-VF8">
+                                <rect key="frame" x="25" y="406" width="284" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.035294117649999998" green="0.047058823530000002" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sek-px-Kaz">
+                        <barButtonItem key="leftBarButtonItem" title="Annuler" id="o3s-2i-8VZ">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="40J-PL-FIu" kind="modal" id="BtP-Ux-CUy"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Sauvegarder" id="UUn-OH-mKI">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="saveSignUp:" destination="W2F-ld-J7P" id="7bD-5p-vA2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="age" destination="GyV-zL-p90" id="QUs-b6-JEl"/>
+                        <outlet property="city" destination="iTf-TN-IjQ" id="ZQW-Q2-aup"/>
+                        <outlet property="password" destination="s8j-hU-76t" id="CjQ-Ya-7ok"/>
+                        <outlet property="sex" destination="L6J-r8-cac" id="x3p-ME-ZvU"/>
+                        <outlet property="signupInfo" destination="hm4-tl-VF8" id="nci-uz-pgh"/>
+                        <outlet property="userName" destination="mWc-ra-jLn" id="Jmb-Hh-nBH"/>
+                        <outlet property="weight" destination="SLg-JP-IUo" id="eNz-2X-ccx"/>
+                        <segue destination="40J-PL-FIu" kind="modal" identifier="signup" id="UTU-PE-u8S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F4J-xc-pZI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4979" y="-787"/>
+        </scene>
+        <!--Main View Controller - StartToTest-->
+        <scene sceneID="dgq-nv-dOc">
+            <objects>
+                <viewController title="StartToTest" wantsFullScreenLayout="YES" id="Fay-wZ-qjZ" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m3H-Wt-y1K"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z7h-OJ-x04"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S0I-AK-3MZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWX-r2-5Lb">
+                                <rect key="frame" x="99" y="201" width="122" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.34901960780000002" green="0.3803921569" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="15"/>
+                                <state key="normal" title="Lancer un test">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startTest:" destination="Fay-wZ-qjZ" eventType="touchUpInside" id="hrw-9C-5kx"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83C-9G-vaL">
+                                <rect key="frame" x="121" y="241" width="82" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="50"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Te-Dy-1fR">
+                                <rect key="frame" x="94" y="391" width="133" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="15"/>
+                                <state key="normal" title="Résultat du test">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showResult:" destination="Fay-wZ-qjZ" eventType="touchUpInside" id="16u-Mn-9RY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="95e-p2-fQ3">
+                                <rect key="frame" x="20" y="173" width="280" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="i30-in-eN4">
+                                <rect key="frame" x="150" y="340" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="07m-2R-4KL">
+                                <rect key="frame" x="59" y="117" width="202" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsS-m4-C0o">
+                                <rect key="frame" x="121" y="284" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="15"/>
+                                <state key="normal" title="Réessayez">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="retry:" destination="Fay-wZ-qjZ" eventType="touchUpInside" id="x93-Qi-Wck"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.035294117649999998" green="0.047058823530000002" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Dkt-Ju-bb3">
+                        <barButtonItem key="rightBarButtonItem" title="Déconnexion" id="jud-Fh-SbS">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="signOut:" destination="Fay-wZ-qjZ" id="ZC1-mz-BtD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="BLEmessage" destination="95e-p2-fQ3" id="aex-Sl-cGa"/>
+                        <outlet property="counter" destination="83C-9G-vaL" id="q50-jJ-09p"/>
+                        <outlet property="indicatorMainView" destination="i30-in-eN4" id="cBZ-FN-7R6"/>
+                        <outlet property="retry" destination="rsS-m4-C0o" id="SFU-ip-a4l"/>
+                        <outlet property="showResult" destination="5Te-Dy-1fR" id="SCW-aX-RKj"/>
+                        <outlet property="startTest" destination="PWX-r2-5Lb" id="CS4-Ra-9pg"/>
+                        <segue destination="UFq-oa-GcY" kind="modal" identifier="showResult" id="PSy-l5-eGS"/>
+                        <segue destination="40J-PL-FIu" kind="modal" identifier="Deconnexion1" id="mfC-y7-8zW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ebI-U0-nDH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4391" y="246"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1387395517_user.png" width="30" height="30"/>
+        <image name="1387395532_bubble.png" width="30" height="30"/>
+        <image name="1387395549_location.png" width="30" height="30"/>
+        <image name="1387395565_news.png" width="30" height="30"/>
+        <image name="Logo.png" width="377" height="74"/>
+        <image name="annotationBus.png" width="64" height="64"/>
+        <image name="annotationMetro.png" width="64" height="64"/>
+        <image name="annotationSam.png" width="64" height="64"/>
+        <image name="annotationTaxi.png" width="64" height="64"/>
+    </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="PSy-l5-eGS"/>
+        <segue reference="F6e-uf-T88"/>
+        <segue reference="YjK-If-4h5"/>
+        <segue reference="y3n-g6-gBm"/>
+    </inferredMetricsTieBreakers>
+</document>
