@@ -7,10 +7,9 @@
 #- xctool -version
 #- xcodebuild -version -sdk
 
-#script:
-#xctool -project Ethylocle.xcodeproj -scheme Ethylocle -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO build test
+script: xctool -project Ethylocle.xcodeproj -scheme Ethylocle -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO build test
 
 
-language: objective-c
-xcode_project: Ethlocle.xcodeproj # path to your xcodeproj folder
-xcode_scheme: Ethylocle
+#language: objective-c
+#xcode_project: Ethlocle.xcodeproj # path to your xcodeproj folder
+#xcode_scheme: Ethylocle
