@@ -1,4 +1,4 @@
-PFE_Ethylocle
+Ethylocle
 =============
 
 test PFE project with CI(Travis &amp; Jenkins)
