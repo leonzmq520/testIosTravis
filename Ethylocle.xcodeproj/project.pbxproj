@@ -69,7 +69,8 @@
 		A2C2E0521861F73A009DA8A6 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = A2C2E04E1861F73A009DA8A6 /* settings.png */; };
 		A2C2E0541861F8E8009DA8A6 /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = A2C2E0531861F8E8009DA8A6 /* chat.png */; };
 		A2C2E0561861FD06009DA8A6 /* graph.png in Resources */ = {isa = PBXBuildFile; fileRef = A2C2E0551861FD06009DA8A6 /* graph.png */; };
-		A2DEBA5C19F6CC060052D6FC /* EthylocleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DEBA5B19F6CC060052D6FC /* EthylocleTests.m */; };
+		A2DEBA6319F6CD3B0052D6FC /* EthylocleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DEBA6219F6CD3B0052D6FC /* EthylocleTests.m */; };
+		A2DEBA6519F6CDA20052D6FC /* BasicFunctionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DEBA6419F6CDA20052D6FC /* BasicFunctionsTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -240,11 +241,10 @@
 		A2C2E04E1861F73A009DA8A6 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		A2C2E0531861F8E8009DA8A6 /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
 		A2C2E0551861FD06009DA8A6 /* graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graph.png; sourceTree = "<group>"; };
-		A2DEBA4B19F6C76F0052D6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2DEBA4C19F6C76F0052D6FC /* Ethylocle_temp_caseinsensitive_rename_temp_caseinsensitive_rename_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ethylocle_temp_caseinsensitive_rename_temp_caseinsensitive_rename_Tests.m; sourceTree = "<group>"; };
 		A2DEBA5719F6CC060052D6FC /* EthylocleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EthylocleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DEBA5A19F6CC060052D6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2DEBA5B19F6CC060052D6FC /* EthylocleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EthylocleTests.m; sourceTree = "<group>"; };
+		A2DEBA6219F6CD3B0052D6FC /* EthylocleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EthylocleTests.m; sourceTree = "<group>"; };
+		A2DEBA6419F6CDA20052D6FC /* BasicFunctionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicFunctionsTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,7 +282,6 @@
 				028851D01912A35F00472FAD /* Default-568h@2x.png */,
 				A21B7AF5184607180093C725 /* InterfacePPE */,
 				A21B7B14184607180093C725 /* InterfacePPETests */,
-				A2DEBA4919F6C76F0052D6FC /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests */,
 				A2DEBA5819F6CC060052D6FC /* EthylocleTests */,
 				A21B7AEE184607180093C725 /* Frameworks */,
 				A21B7AED184607180093C725 /* Products */,
@@ -505,27 +504,11 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
-		A2DEBA4919F6C76F0052D6FC /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests */ = {
-			isa = PBXGroup;
-			children = (
-				A2DEBA4C19F6C76F0052D6FC /* Ethylocle_temp_caseinsensitive_rename_temp_caseinsensitive_rename_Tests.m */,
-				A2DEBA4A19F6C76F0052D6FC /* Supporting Files */,
-			);
-			path = "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests";
-			sourceTree = "<group>";
-		};
-		A2DEBA4A19F6C76F0052D6FC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A2DEBA4B19F6C76F0052D6FC /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		A2DEBA5819F6CC060052D6FC /* EthylocleTests */ = {
 			isa = PBXGroup;
 			children = (
-				A2DEBA5B19F6CC060052D6FC /* EthylocleTests.m */,
+				A2DEBA6419F6CDA20052D6FC /* BasicFunctionsTests.m */,
+				A2DEBA6219F6CD3B0052D6FC /* EthylocleTests.m */,
 				A2DEBA5919F6CC060052D6FC /* Supporting Files */,
 			);
 			path = EthylocleTests;
@@ -697,7 +680,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2DEBA5C19F6CC060052D6FC /* EthylocleTests.m in Sources */,
+				A2DEBA6519F6CDA20052D6FC /* BasicFunctionsTests.m in Sources */,
+				A2DEBA6319F6CD3B0052D6FC /* EthylocleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

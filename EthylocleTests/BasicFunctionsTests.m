@@ -1,6 +1,6 @@
 //
-//  Ethylocle_temp_caseinsensitive_rename_temp_caseinsensitive_rename_Tests.m
-//  Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests
+//  BasicFunctionsTests.m
+//  Ethylocle
 //
 //  Created by leon on 14/10/21.
 //  Copyright (c) 2014年 leon. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface Ethylocle_temp_caseinsensitive_rename_temp_caseinsensitive_rename_Tests : XCTestCase
+@interface BasicFunctionsTests : XCTestCase
 
 @end
 
-@implementation Ethylocle_temp_caseinsensitive_rename_temp_caseinsensitive_rename_Tests
+@implementation BasicFunctionsTests
 
 - (void)setUp {
     [super setUp];
@@ -25,9 +25,8 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+- (void)testAddition {
+    XCTAssert(2+2 == 5, @"It should be %d",2+2);
 }
 
 - (void)testPerformanceExample {
