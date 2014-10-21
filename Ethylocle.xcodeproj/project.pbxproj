@@ -69,16 +69,16 @@
 		A2C2E0521861F73A009DA8A6 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = A2C2E04E1861F73A009DA8A6 /* settings.png */; };
 		A2C2E0541861F8E8009DA8A6 /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = A2C2E0531861F8E8009DA8A6 /* chat.png */; };
 		A2C2E0561861FD06009DA8A6 /* graph.png in Resources */ = {isa = PBXBuildFile; fileRef = A2C2E0551861FD06009DA8A6 /* graph.png */; };
-		A2DEBA4D19F6C76F0052D6FC /* Ethylocle_temp_caseinsensitive_rename_temp_caseinsensitive_rename_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DEBA4C19F6C76F0052D6FC /* Ethylocle_temp_caseinsensitive_rename_temp_caseinsensitive_rename_Tests.m */; };
+		A2DEBA5C19F6CC060052D6FC /* EthylocleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DEBA5B19F6CC060052D6FC /* EthylocleTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A2DEBA4E19F6C76F0052D6FC /* PBXContainerItemProxy */ = {
+		A2DEBA5D19F6CC060052D6FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A21B7AE4184607180093C725 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A21B7AEB184607180093C725;
-			remoteInfo = Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename;
+			remoteInfo = Ethylocle;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -240,9 +240,11 @@
 		A2C2E04E1861F73A009DA8A6 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		A2C2E0531861F8E8009DA8A6 /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
 		A2C2E0551861FD06009DA8A6 /* graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graph.png; sourceTree = "<group>"; };
-		A2DEBA4819F6C76F0052D6FC /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DEBA4B19F6C76F0052D6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2DEBA4C19F6C76F0052D6FC /* Ethylocle_temp_caseinsensitive_rename_temp_caseinsensitive_rename_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ethylocle_temp_caseinsensitive_rename_temp_caseinsensitive_rename_Tests.m; sourceTree = "<group>"; };
+		A2DEBA5719F6CC060052D6FC /* EthylocleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EthylocleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2DEBA5A19F6CC060052D6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2DEBA5B19F6CC060052D6FC /* EthylocleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EthylocleTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,7 +264,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2DEBA4519F6C76F0052D6FC /* Frameworks */ = {
+		A2DEBA5419F6CC060052D6FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -281,6 +283,7 @@
 				A21B7AF5184607180093C725 /* InterfacePPE */,
 				A21B7B14184607180093C725 /* InterfacePPETests */,
 				A2DEBA4919F6C76F0052D6FC /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests */,
+				A2DEBA5819F6CC060052D6FC /* EthylocleTests */,
 				A21B7AEE184607180093C725 /* Frameworks */,
 				A21B7AED184607180093C725 /* Products */,
 			);
@@ -290,7 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				A21B7AEC184607180093C725 /* ETHYLOCLE.app */,
-				A2DEBA4819F6C76F0052D6FC /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests.xctest */,
+				A2DEBA5719F6CC060052D6FC /* EthylocleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -519,12 +522,29 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A2DEBA5819F6CC060052D6FC /* EthylocleTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2DEBA5B19F6CC060052D6FC /* EthylocleTests.m */,
+				A2DEBA5919F6CC060052D6FC /* Supporting Files */,
+			);
+			path = EthylocleTests;
+			sourceTree = "<group>";
+		};
+		A2DEBA5919F6CC060052D6FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2DEBA5A19F6CC060052D6FC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A21B7AEB184607180093C725 /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename */ = {
+		A21B7AEB184607180093C725 /* Ethylocle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A21B7B1E184607180093C725 /* Build configuration list for PBXNativeTarget "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename" */;
+			buildConfigurationList = A21B7B1E184607180093C725 /* Build configuration list for PBXNativeTarget "Ethylocle" */;
 			buildPhases = (
 				A21B7AE8184607180093C725 /* Sources */,
 				A21B7AE9184607180093C725 /* Frameworks */,
@@ -534,27 +554,27 @@
 			);
 			dependencies = (
 			);
-			name = Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename;
+			name = Ethylocle;
 			productName = InterfacePPE;
 			productReference = A21B7AEC184607180093C725 /* ETHYLOCLE.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A2DEBA4719F6C76F0052D6FC /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests */ = {
+		A2DEBA5619F6CC060052D6FC /* EthylocleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2DEBA5019F6C76F0052D6FC /* Build configuration list for PBXNativeTarget "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests" */;
+			buildConfigurationList = A2DEBA5F19F6CC060052D6FC /* Build configuration list for PBXNativeTarget "EthylocleTests" */;
 			buildPhases = (
-				A2DEBA4419F6C76F0052D6FC /* Sources */,
-				A2DEBA4519F6C76F0052D6FC /* Frameworks */,
-				A2DEBA4619F6C76F0052D6FC /* Resources */,
+				A2DEBA5319F6CC060052D6FC /* Sources */,
+				A2DEBA5419F6CC060052D6FC /* Frameworks */,
+				A2DEBA5519F6CC060052D6FC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A2DEBA4F19F6C76F0052D6FC /* PBXTargetDependency */,
+				A2DEBA5E19F6CC060052D6FC /* PBXTargetDependency */,
 			);
-			name = "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests";
-			productName = "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests";
-			productReference = A2DEBA4819F6C76F0052D6FC /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests.xctest */;
+			name = EthylocleTests;
+			productName = EthylocleTests;
+			productReference = A2DEBA5719F6CC060052D6FC /* EthylocleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -570,7 +590,7 @@
 					A21B7AEB184607180093C725 = {
 						DevelopmentTeam = B3H2R7H29E;
 					};
-					A2DEBA4719F6C76F0052D6FC = {
+					A2DEBA5619F6CC060052D6FC = {
 						CreatedOnToolsVersion = 6.0.1;
 						TestTargetID = A21B7AEB184607180093C725;
 					};
@@ -589,8 +609,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A21B7AEB184607180093C725 /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename */,
-				A2DEBA4719F6C76F0052D6FC /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests */,
+				A21B7AEB184607180093C725 /* Ethylocle */,
+				A2DEBA5619F6CC060052D6FC /* EthylocleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -645,7 +665,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2DEBA4619F6C76F0052D6FC /* Resources */ = {
+		A2DEBA5519F6CC060052D6FC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -673,21 +693,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2DEBA4419F6C76F0052D6FC /* Sources */ = {
+		A2DEBA5319F6CC060052D6FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2DEBA4D19F6C76F0052D6FC /* Ethylocle_temp_caseinsensitive_rename_temp_caseinsensitive_rename_Tests.m in Sources */,
+				A2DEBA5C19F6CC060052D6FC /* EthylocleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A2DEBA4F19F6C76F0052D6FC /* PBXTargetDependency */ = {
+		A2DEBA5E19F6CC060052D6FC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A21B7AEB184607180093C725 /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename */;
-			targetProxy = A2DEBA4E19F6C76F0052D6FC /* PBXContainerItemProxy */;
+			target = A21B7AEB184607180093C725 /* Ethylocle */;
+			targetProxy = A2DEBA5D19F6CC060052D6FC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -841,7 +861,7 @@
 			};
 			name = Release;
 		};
-		A2DEBA5119F6C76F0052D6FC /* Debug */ = {
+		A2DEBA6019F6CC060052D6FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -855,7 +875,7 @@
 					"$(inherited)",
 				);
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests/Info.plist";
+				INFOPLIST_FILE = EthylocleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -864,7 +884,7 @@
 			};
 			name = Debug;
 		};
-		A2DEBA5219F6C76F0052D6FC /* Release */ = {
+		A2DEBA6119F6CC060052D6FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -874,7 +894,7 @@
 					"$(inherited)",
 				);
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests/Info.plist";
+				INFOPLIST_FILE = EthylocleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -895,7 +915,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A21B7B1E184607180093C725 /* Build configuration list for PBXNativeTarget "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename" */ = {
+		A21B7B1E184607180093C725 /* Build configuration list for PBXNativeTarget "Ethylocle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A21B7B1F184607180093C725 /* Debug */,
@@ -904,11 +924,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2DEBA5019F6C76F0052D6FC /* Build configuration list for PBXNativeTarget "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests" */ = {
+		A2DEBA5F19F6CC060052D6FC /* Build configuration list for PBXNativeTarget "EthylocleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A2DEBA5119F6C76F0052D6FC /* Debug */,
-				A2DEBA5219F6C76F0052D6FC /* Release */,
+				A2DEBA6019F6CC060052D6FC /* Debug */,
+				A2DEBA6119F6CC060052D6FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
