@@ -20,6 +20,20 @@
                ReferencedContainer = "container:Ethylocle.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A2DEBA4719F6C76F0052D6FC"
+               BuildableName = "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests.xctest"
+               BlueprintName = "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests"
+               ReferencedContainer = "container:Ethylocle.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -28,6 +42,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A2DEBA4719F6C76F0052D6FC"
+               BuildableName = "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests.xctest"
+               BlueprintName = "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests"
+               ReferencedContainer = "container:Ethylocle.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

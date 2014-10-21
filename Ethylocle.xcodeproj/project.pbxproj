@@ -50,11 +50,6 @@
 		A21B7AFC184607180093C725 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A21B7AFB184607180093C725 /* main.m */; };
 		A21B7B00184607180093C725 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A21B7AFF184607180093C725 /* AppDelegate.m */; };
 		A21B7B03184607180093C725 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A21B7B01184607180093C725 /* Main.storyboard */; };
-		A21B7B0F184607180093C725 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21B7B0E184607180093C725 /* XCTest.framework */; };
-		A21B7B10184607180093C725 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21B7AEF184607180093C725 /* Foundation.framework */; };
-		A21B7B11184607180093C725 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21B7AF3184607180093C725 /* UIKit.framework */; };
-		A21B7B19184607180093C725 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A21B7B17184607180093C725 /* InfoPlist.strings */; };
-		A21B7B1B184607180093C725 /* InterfacePPETests.m in Sources */ = {isa = PBXBuildFile; fileRef = A21B7B1A184607180093C725 /* InterfacePPETests.m */; };
 		A2238C0318B2111C00C6B8A6 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2238C0218B2111C00C6B8A6 /* MainMenuViewController.m */; };
 		A22BEAC818AB6DE9000D88AF /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A22BEAC718AB6DE9000D88AF /* SignUpViewController.m */; };
 		A22BEB0618AB95CB000D88AF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22BEB0518AB95CA000D88AF /* QuartzCore.framework */; };
@@ -74,15 +69,16 @@
 		A2C2E0521861F73A009DA8A6 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = A2C2E04E1861F73A009DA8A6 /* settings.png */; };
 		A2C2E0541861F8E8009DA8A6 /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = A2C2E0531861F8E8009DA8A6 /* chat.png */; };
 		A2C2E0561861FD06009DA8A6 /* graph.png in Resources */ = {isa = PBXBuildFile; fileRef = A2C2E0551861FD06009DA8A6 /* graph.png */; };
+		A2DEBA4D19F6C76F0052D6FC /* Ethylocle_temp_caseinsensitive_rename_temp_caseinsensitive_rename_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DEBA4C19F6C76F0052D6FC /* Ethylocle_temp_caseinsensitive_rename_temp_caseinsensitive_rename_Tests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A21B7B12184607180093C725 /* PBXContainerItemProxy */ = {
+		A2DEBA4E19F6C76F0052D6FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A21B7AE4184607180093C725 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A21B7AEB184607180093C725;
-			remoteInfo = InterfacePPE;
+			remoteInfo = Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -139,7 +135,6 @@
 		A21B7AFE184607180093C725 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A21B7AFF184607180093C725 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A21B7B02184607180093C725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A21B7B0D184607180093C725 /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A21B7B0E184607180093C725 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A21B7B16184607180093C725 /* ETHYLOCLE.temp_caseinsensitive_renameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ETHYLOCLE.temp_caseinsensitive_renameTests-Info.plist"; sourceTree = "<group>"; };
 		A21B7B18184607180093C725 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -245,6 +240,9 @@
 		A2C2E04E1861F73A009DA8A6 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		A2C2E0531861F8E8009DA8A6 /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
 		A2C2E0551861FD06009DA8A6 /* graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graph.png; sourceTree = "<group>"; };
+		A2DEBA4819F6C76F0052D6FC /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2DEBA4B19F6C76F0052D6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2DEBA4C19F6C76F0052D6FC /* Ethylocle_temp_caseinsensitive_rename_temp_caseinsensitive_rename_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ethylocle_temp_caseinsensitive_rename_temp_caseinsensitive_rename_Tests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,13 +262,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A21B7B0A184607180093C725 /* Frameworks */ = {
+		A2DEBA4519F6C76F0052D6FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A21B7B0F184607180093C725 /* XCTest.framework in Frameworks */,
-				A21B7B11184607180093C725 /* UIKit.framework in Frameworks */,
-				A21B7B10184607180093C725 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +280,7 @@
 				028851D01912A35F00472FAD /* Default-568h@2x.png */,
 				A21B7AF5184607180093C725 /* InterfacePPE */,
 				A21B7B14184607180093C725 /* InterfacePPETests */,
+				A2DEBA4919F6C76F0052D6FC /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests */,
 				A21B7AEE184607180093C725 /* Frameworks */,
 				A21B7AED184607180093C725 /* Products */,
 			);
@@ -294,7 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				A21B7AEC184607180093C725 /* ETHYLOCLE.app */,
-				A21B7B0D184607180093C725 /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests.xctest */,
+				A2DEBA4819F6C76F0052D6FC /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -506,6 +502,23 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		A2DEBA4919F6C76F0052D6FC /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A2DEBA4C19F6C76F0052D6FC /* Ethylocle_temp_caseinsensitive_rename_temp_caseinsensitive_rename_Tests.m */,
+				A2DEBA4A19F6C76F0052D6FC /* Supporting Files */,
+			);
+			path = "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests";
+			sourceTree = "<group>";
+		};
+		A2DEBA4A19F6C76F0052D6FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2DEBA4B19F6C76F0052D6FC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -526,22 +539,22 @@
 			productReference = A21B7AEC184607180093C725 /* ETHYLOCLE.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A21B7B0C184607180093C725 /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests */ = {
+		A2DEBA4719F6C76F0052D6FC /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A21B7B21184607180093C725 /* Build configuration list for PBXNativeTarget "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests" */;
+			buildConfigurationList = A2DEBA5019F6C76F0052D6FC /* Build configuration list for PBXNativeTarget "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests" */;
 			buildPhases = (
-				A21B7B09184607180093C725 /* Sources */,
-				A21B7B0A184607180093C725 /* Frameworks */,
-				A21B7B0B184607180093C725 /* Resources */,
+				A2DEBA4419F6C76F0052D6FC /* Sources */,
+				A2DEBA4519F6C76F0052D6FC /* Frameworks */,
+				A2DEBA4619F6C76F0052D6FC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A21B7B13184607180093C725 /* PBXTargetDependency */,
+				A2DEBA4F19F6C76F0052D6FC /* PBXTargetDependency */,
 			);
-			name = Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests;
-			productName = InterfacePPETests;
-			productReference = A21B7B0D184607180093C725 /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests.xctest */;
+			name = "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests";
+			productName = "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests";
+			productReference = A2DEBA4819F6C76F0052D6FC /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -557,7 +570,8 @@
 					A21B7AEB184607180093C725 = {
 						DevelopmentTeam = B3H2R7H29E;
 					};
-					A21B7B0C184607180093C725 = {
+					A2DEBA4719F6C76F0052D6FC = {
+						CreatedOnToolsVersion = 6.0.1;
 						TestTargetID = A21B7AEB184607180093C725;
 					};
 				};
@@ -576,7 +590,7 @@
 			projectRoot = "";
 			targets = (
 				A21B7AEB184607180093C725 /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename */,
-				A21B7B0C184607180093C725 /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests */,
+				A2DEBA4719F6C76F0052D6FC /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -631,11 +645,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A21B7B0B184607180093C725 /* Resources */ = {
+		A2DEBA4619F6C76F0052D6FC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A21B7B19184607180093C725 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,21 +673,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A21B7B09184607180093C725 /* Sources */ = {
+		A2DEBA4419F6C76F0052D6FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A21B7B1B184607180093C725 /* InterfacePPETests.m in Sources */,
+				A2DEBA4D19F6C76F0052D6FC /* Ethylocle_temp_caseinsensitive_rename_temp_caseinsensitive_rename_Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A21B7B13184607180093C725 /* PBXTargetDependency */ = {
+		A2DEBA4F19F6C76F0052D6FC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A21B7AEB184607180093C725 /* Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename */;
-			targetProxy = A21B7B12184607180093C725 /* PBXContainerItemProxy */;
+			targetProxy = A2DEBA4E19F6C76F0052D6FC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -828,43 +841,45 @@
 			};
 			name = Release;
 		};
-		A21B7B22184607180093C725 /* Debug */ = {
+		A2DEBA5119F6C76F0052D6FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InterfacePPE.app/InterfacePPE";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "InterfacePPE/InterfacePPE-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "InterfacePPETests/ETHYLOCLE.temp_caseinsensitive_renameTests-Info.plist";
-				PRODUCT_NAME = Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ETHYLOCLE.app/ETHYLOCLE";
 			};
 			name = Debug;
 		};
-		A21B7B23184607180093C725 /* Release */ = {
+		A2DEBA5219F6C76F0052D6FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InterfacePPE.app/InterfacePPE";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "InterfacePPE/InterfacePPE-Prefix.pch";
-				INFOPLIST_FILE = "InterfacePPETests/ETHYLOCLE.temp_caseinsensitive_renameTests-Info.plist";
-				PRODUCT_NAME = Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ETHYLOCLE.app/ETHYLOCLE";
 			};
 			name = Release;
 		};
@@ -889,14 +904,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A21B7B21184607180093C725 /* Build configuration list for PBXNativeTarget "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests" */ = {
+		A2DEBA5019F6C76F0052D6FC /* Build configuration list for PBXNativeTarget "Ethylocle.temp_caseinsensitive_rename.temp_caseinsensitive_rename Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A21B7B22184607180093C725 /* Debug */,
-				A21B7B23184607180093C725 /* Release */,
+				A2DEBA5119F6C76F0052D6FC /* Debug */,
+				A2DEBA5219F6C76F0052D6FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
