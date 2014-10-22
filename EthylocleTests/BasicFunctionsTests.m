@@ -26,7 +26,7 @@
 }
 
 - (void)testAddition {
-    XCTAssert(2+2 == 5, @"It should be %d",2+2);
+    XCTAssert(2+2 == 4, @"It should be %d",2+2);
 }
 
 - (void)testPerformanceExample {
